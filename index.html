@@ -13,7 +13,7 @@
       loading...
     </div>
     <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 100vw; height: 100vh; background: #231F20"></canvas>
-    <script src="Build/PortfolioButAwesome.loader"></script>
+    <script src="Build/Portfolio.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -32,9 +32,9 @@
 
       const loadingText = document.getElementById('loading-text');
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PortfolioButAwesome.data.unityweb",
-        frameworkUrl: "Build/PortfolioButAwesome.framework.js.unityweb",
-        codeUrl: "Build/PortfolioButAwesome.wasm.unityweb",
+        dataUrl: "Build/Portfolio.data.unityweb",
+        frameworkUrl: "Build/Portfolio.framework.js.unityweb",
+        codeUrl: "Build/Portfolio.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "portfolio",
